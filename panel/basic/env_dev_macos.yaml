@@ -1,0 +1,23 @@
+# https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually
+name: panel_dev_macos
+channels:
+  - cmutel
+  - conda-forge
+  - nodefaults
+dependencies:
+  # core funcitonality
+  - python=3.11
+  # dependency management
+  - jupyterlab
+  - scipy  
+  - pandas
+  - numpy
+  # plotting
+  - matplotlib
+  # interactivity
+  # https://panel.holoviz.org/getting_started/installation.html
+  - panel
+  - watchfiles
+  # Brightway
+  - brightway25_nosolver
+  - scikit-umfpack
